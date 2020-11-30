@@ -3,7 +3,7 @@ const answer = prompt('Введите пароль') || 'Отменено пол
 
 console.log(answer);
 
-const ADMIN_PASSWORD ='jquertyismyjam';
+const ADMIN_PASSWORD ='jqueryismyjam';
 
 let message = answer === ADMIN_PASSWORD 
     ? 'Добро пожаловать!'
