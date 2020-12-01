@@ -7,21 +7,25 @@ const australia = 'австралия';
 const india = 'индия';
 const jamaica = 'ямайка';
 
-let country = prompt('В какую страну доставить товар?') ;
 
-country = country.toLowerCase();
+let country = prompt('В какую страну доставить товар?');
+
+if (country === null) {
+    alert('В вашей стране доставка не доступна');
+}
+else {
+    country = country.toLowerCase();
+
 
 let message;
 
-
-console.log(country);
-
 switch (country) {
-    case china:
-        country = 'Китай';
-        deliveryPrice = 100;        
-        message = `Доставка в ${country} будет стоить ${deliveryPrice} кредитов`;
-        break;
+
+case china:
+    country = 'Китай';
+    deliveryPrice = 100;        
+    message = `Доставка в ${country} будет стоить ${deliveryPrice} кредитов`;
+    break;
 
 
 case chile:
@@ -48,9 +52,12 @@ case jamaica:
     message = `Доставка в ${country} будет стоить ${deliveryPrice} кредитов`;
     break;
 
+
 default:
     message = 'В вашей стране доставка не доступна';
 }
 
 
 alert(message);
+
+}
