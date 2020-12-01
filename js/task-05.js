@@ -7,7 +7,7 @@ const australia = 'австралия';
 const india = 'индия';
 const jamaica = 'ямайка';
 
-let country = prompt('В какую страну доставить товар?') || 'Отменено пользователем';
+let country = prompt('В какую страну доставить товар?') ;
 
 country = country.toLowerCase();
 
